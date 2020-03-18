@@ -1,0 +1,91 @@
+{
+  "name": "军用飞机",
+  "children": [
+    {
+      "name": "军用直升机",
+      "children": [
+        {
+          "name": "武装直升机",
+          "value": 1
+        },
+        {
+          "name": "专用直升机",
+          "value": 2
+        },
+        {
+          "name": "运输直升机",
+          "value": 2
+        },
+        {
+          "name": "舰载直升机",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "军用飞机",
+      "children": [
+        {
+          "name": "战斗机",
+          "value": 5
+        },
+        {
+          "name": "强击机",
+          "value": 6
+        },
+        {
+          "name": "轰炸机",
+          "value": 7
+        },
+        {
+          "name": "舰载机",
+          "value": 8
+        },
+        {
+          "name": "侦察机",
+          "value": 9
+        },
+        {
+          "name": "干扰机",
+          "value": 10
+        },
+        {
+          "name": "巡逻机",
+          "value": 11
+        },
+        {
+          "name": "预警机",
+          "value": 12
+        },
+        {
+          "name": "无人驾驶机",
+          "value": 13
+        },
+        {
+          "name": "加油机",
+          "value": 14
+        },
+        {
+          "name": "运输机",
+          "value": 15
+        },
+        {
+          "name": "教练机",
+          "value": 16
+        },
+        {
+          "name": "航测机",
+          "value": 17
+        },
+        {
+          "name": "靶机",
+          "value": 18
+        },
+        {
+          "name": "通信指挥机",
+          "value": 19
+        }
+      ]
+    }
+  ]
+}
