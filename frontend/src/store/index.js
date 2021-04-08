@@ -8,14 +8,14 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     navIndex: "home",
-    mode: localStorage.getItem("mode") || "normal"
+    user: JSON.parse(localStorage.getItem("user")) || null
   },
   mutations: {
     SET_INDEX(state, params) {
       state.navIndex = params;
     },
-    SET_MODE(state, params) {
-      state.mode = params;
+    SET_USER(state, params) {
+      state.user = params;
     }
   },
   actions: {},

@@ -6,10 +6,13 @@ import Axios from '@/api/index'
 import echarts from 'echarts'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// require('./mock.js')
 
 Vue.prototype.$echarts = echarts
 Vue.prototype.$http = Axios
 Vue.config.productionTip = false
+Vue.prototype.window = window
+
 
 Vue.use(ElementUI)
 

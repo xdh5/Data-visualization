@@ -5,12 +5,14 @@ npm-debug.log*
 
 # Node.js
 frontend/node_modules/
-
+frontend/build/
 
 # Python
 __pycache__
 backend/venv
+backend/templates/
 *.pyc
 
 # macOs
 .DS_Store
+backend/templates/

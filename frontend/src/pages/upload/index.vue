@@ -1,4 +1,4 @@
-<template>
+n<template>
   <div class="upload body">
     <el-steps
       :active="active"

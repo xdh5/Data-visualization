@@ -7,7 +7,8 @@ from flask import Flask
 from flask_restful import Resource, Api
 import pandas as pd
 import requests
-from routes import Home, Classify, Custering, Search, Upload, Handle
+
+from routes import Home, Atlas, Custering, Search, Upload, Handle, User
 
 app = Flask(__name__,
             static_folder="./templates/static",
@@ -37,8 +38,8 @@ class getPapers(Resource):
 api.add_resource(Home.home_carousel, '/api/home/getCarousel')  # 主页-轮播图
 api.add_resource(Home.get_carousel, '/api/images/carouselImages/<imageid>')  # 下载轮播图图片
 
-api.add_resource(Classify.classify_info, '/api/classify/getInfo')  # 分类页-图片
-api.add_resource(Classify.classify_card, '/api/classify/getCard')  # 分类页-卡片
+api.add_resource(Atlas.classify_info, '/api/classify/getInfo')  # 分类页-图片
+api.add_resource(Atlas.classify_card, '/api/classify/getCard')  # 分类页-卡片
 
 api.add_resource(Custering.getNetwork_svg, '/api/getNetwork_svg/<imageid>')  # 聚类页图片
 api.add_resource(Custering.clustering_network, '/api/clustering/getNetwork')  # 聚类页图片和图例
@@ -48,6 +49,9 @@ api.add_resource(Search.search_result, '/api/search/getSearchData')  # 搜索页
 api.add_resource(Upload.check_file, '/api/Upload/checkFile') #检查文献
 
 api.add_resource(Handle.handle_data, '/api/waiting/handle')  # 处理数据
+
+api.add_resource(User.register, '/api/user/register')
+api.add_resource(User.login, '/api/user/login')
 
 api.add_resource(getImages, '/api/images/<imageid>')  # 下载图片
 api.add_resource(getPapers, '/api/files/<fileid>')  # 下载文献
