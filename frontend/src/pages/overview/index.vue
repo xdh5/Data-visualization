@@ -1,12 +1,35 @@
 <template>
-  <div class="upload body">
+  <div class="upload body" v-loading.fullscreen.lock="loading">
     <div class="left">
-    <Card
-      :data="data"
+    <div class="tag-wrapper">
+    <el-tag 
+      :effect="tag.id == selected ? 'dark' : 'plain'"
+      v-for="tag in tags"
+      :key="tag.id"
+      class="tag"
+      @click="handleSelect(tag.id)"
+    >
+      {{tag.name}}
+    </el-tag>
+    </div>
+
+    <div
       v-for="(data,key) in cardData.data"
       :key="key"
+      style="display: flex"
     >
-    </Card>
+      <el-checkbox
+        :value="checkList.indexOf(data.content) !== -1"
+        @change	="handleChenck(data.content)"
+        style="float:left; margin-right: 10px"
+      >
+      </el-checkbox>
+      <Card
+        :data="data"
+      >
+      </Card>
+    </div>
+
     <el-pagination
       v-if="cardData.total>10"
       background
@@ -18,10 +41,22 @@
     </el-pagination>
     </div>
     <div class="right">
-      <h2>智能综述</h2>
-      <div>
-        11月16日，美国《驱动》网站发文披露，两家美国公司在此前完成了一次具有相当创新性的空战模拟测试，首次让飞行员驾驶实装和虚拟的人工智能（AI）目标进行了“狗斗”。测试在驾驶舱中引入增强现实（AR）技术，将虚拟目标显示在飞行员眼前，而这次的虚拟目标是以歼20战斗机为?
+      <div class="title">
+        <span>智能综述</span>
+        <el-button
+          size="small"
+          @click="start"
+          :disabled="checkList.length === 0"
+        >
+        开始综述
+        </el-button>
       </div>
+      <el-input
+        type="textarea"
+        v-model="abstract"
+        :disabled="!abstract"
+        :rows="15">
+      </el-input>
     </div>
   </div>
 </template>
@@ -35,18 +70,76 @@ export default {
   },
   data() {
     return {
+      loading: false,
+      selected: '',
+      checkList: [],
+      tags: [{id: 'paper', name: '文献'}, {id: 'patent',name: '专利'}, {id: 'webpage', name: '网页'}],
+      abstract: '',
+      cardDataPage: 1,
       cardData: {
-        'total': 2,
-        'data': [
-          {'title': '视距内空战训练的新手段：美使用增强现实技术生成歼20战斗机', 'author': '何晓骁', 'abstract': '11月16日，美国《驱动》网站发文披露，两家美国公司在此前完成了一次具有相当创新性的空战模拟测试，首次让飞行员驾驶实装和虚拟的人工智能（AI）目标进行了“狗斗”。测试在驾驶舱中引入增强现实（AR）技术，将虚拟目标显示在飞行员眼前，而这次的虚拟目标是以歼20战斗机为?', 'source': '来源', 'url': '/api/files/test.pdf', 'type':'文献'},
-          {'title': '视距内空战训练的新手段：美使用增强现实技术生成歼20战斗机', 'author': '何晓骁', 'abstract': '11月16日，美国《驱动》网站发文披露，两家美国公司在此前完成了一次具有相当创新性的空战模拟测试，首次让飞行员驾驶实装和虚拟的人工智能（AI）目标进行了“狗斗”。测试在驾驶舱中引入增强现实（AR）技术，将虚拟目标显示在飞行员眼前，而这次的虚拟目标是以歼20战斗机为?', 'source': '来源', 'url': 'https://www.baidu.com', 'type':'网页'}
-        ]
+        'total': 0,
+        'data': []
       }
+    }
+  },
+  methods:{
+    handleChenck(content){
+      const number = this.checkList.indexOf(content)
+      if(number !== -1){
+        this.checkList.splice(number,1)
+      }else{
+        this.checkList.push(content)
+      }
+    },
+    start(){
+      this.loading = true
+      this.$http
+        .post('/api/overview/start', {
+          content: String(this.checkList)
+        }, {timeout: 0})
+        .then(res => {
+          this.abstract = res.abstract
+          this.loading = false
+        })
+        .catch(err => {
+        })
+    },
+    handleSizeChange(val) {
+      this.cardDataPage = val
+      this.getData(this.selected, val)
+    },
+    handleSelect(id){
+      this.checkList = []
+      this.selected = id
+      this.cardDataPage = 1
+      this.getData(id, 1)
+    },
+    getData(type, page){
+      this.$http
+        .get('/api/overview/getSelectData', {
+          params: {
+            type,
+            page
+          }
+        })
+        .then(res => {
+          this.cardData.total = res.total
+          this.cardData.data = res.data
+        })
+        .catch(err => {
+        })
     }
   }
 }
 </script>
 <style lang="less" scoped>
+.tag-wrapper{
+  margin-bottom: 20px;
+  .tag{
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
 .step-components {
   margin: 30px 0;
 }
@@ -61,10 +154,19 @@ export default {
     line-height: 50px;
   }
   .left{
-    flex:3
+    flex:3;
+    padding-right: 20px;
+    padding-bottom: 20px
   }
   .right{
-    flex:2
+    flex:2;
+    .title{
+      span{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      margin-bottom: 10px;
+    }
   }
 }
 </style>

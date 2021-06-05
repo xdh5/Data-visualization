@@ -10,16 +10,10 @@
       <el-tab-pane label="检索" name="search"></el-tab-pane>
       <el-tab-pane label="智能综述" name="overview"></el-tab-pane>
       <el-tab-pane label="智能推荐" name="recommend"></el-tab-pane>
+      <el-tab-pane label="上传数据" name="upload"></el-tab-pane>
+      <el-tab-pane label="采集数据" name="spider"></el-tab-pane>
     </el-tabs>
     <div class="login">
-      <el-button
-      v-if="$store.state.user && $store.state.user.admin"
-        size="small"
-        type="primary"
-        @click="upload"
-        plain>
-        上传文件
-      </el-button>
       <el-button
         size="small"
         type="primary"
@@ -66,7 +60,9 @@ export default {
       this.$router.push({name: this.navIndex})
     },
     register(){
-      this.$router.push({name: 'register'})
+      if(!this.$store.state.user){
+        this.$router.push({name: 'register'})
+      }
     },
     login(){
       this.$router.push({name: 'login'})
@@ -90,12 +86,6 @@ export default {
     window.onload=function(){
       if (pathname)
         that.navIndex = pathname
-    }
-  },
-  watch:{
-    $route(to,from){
-      if (to.name !== 'waiting')
-        this.navIndex = to.name
     }
   }
 };

@@ -16,7 +16,6 @@ class register(Resource):
         password = data.get('password')
         habit = data.get('habit')
         interesting = data.get('interesting')
-        print(interesting)
         result = collections.find()
         for user in result:
           if name == user['name']:

@@ -39,7 +39,7 @@ const routes = [
       )
   }
 ]
-const pages = ["home", "atlas", "overview", "search", "recommend","upload"]
+const pages = ["home", "atlas", "overview", "search", "recommend","upload","spider"]
 pages.forEach(element => {
   routes.push({
     path: '/' + element,

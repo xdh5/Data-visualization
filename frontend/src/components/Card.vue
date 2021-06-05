@@ -1,20 +1,19 @@
 <template>
 <div class="card">      
   <div class="card-title">
-    <a :href="data.url" target="_blank">
-      <span v-if="data.title">{{data.title}}</span>
-      -
-      <span v-if="data.author">{{data.author}}</span>
-      <span v-if="data.type">[{{data.type}}]</span>
-    </a>
+    <span v-if="data.title">{{data.title}}</span>
+    -
+    <span v-if="data.author">{{data.author}}</span>
+    <span v-if="data.type">[{{data.type}}]</span>
   </div>
   <div class="card-content">
-  <el-tooltip effect="dark" :content="data.abstract" placement="top-start">
-    <span v-if="data.abstract">{{data.abstract | ellipsis}}</span>
-  </el-tooltip>
-  </div>
-  <div class="card-source">
-    <span v-if="data.source">{{data.source}}</span>
+    <el-popover
+      placement="top-start"
+      width="500"
+      trigger="click"
+      :content="data.content">
+      <span slot="reference" v-if="data.content">{{data.content | ellipsis}}</span>
+    </el-popover>
   </div>
 </div>
 </template>
@@ -37,9 +36,10 @@ export default {
 <style lang="less" scoped>
 .card{
   position: relative; font-family: 'SimSun';
+  margin-bottom: 30px;
   &-title{
-    a{ color:rgb(51,133,255); }
-    text-decoration:underline; margin-bottom:10px;
+    span{ color:rgb(51,133,255); }
+    margin-bottom:10px;
   }
   &-content{ line-height: 20px; width: 95%; overflow: hidden; }
   &-ellipsis{ position: absolute; right:8px; bottom: 45px; }
