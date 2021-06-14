@@ -53,7 +53,6 @@ class handleShow(Resource):
         name = data.get('name')
         data = data.get('data')
         
-        print(name, data)
         condition = {'name':name}
         now_user = collections.find_one(condition)
         key = now_user['history']

@@ -20,7 +20,7 @@ class get_data(Resource):
         name = request.args.get('name')
 
         condition = {'name':name}
-        now_user = user.find_one(condition)
+        
         key = now_user['search']
 
         if len(key) >= 100:
