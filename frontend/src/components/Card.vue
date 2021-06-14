@@ -11,6 +11,7 @@
       placement="top-start"
       width="500"
       trigger="click"
+      @show="handleShow(data)"
       :content="data.content">
       <span slot="reference" v-if="data.content">{{data.content | ellipsis}}</span>
     </el-popover>
@@ -29,6 +30,22 @@ export default {
         }else{
             return value
         }
+    }
+  },
+  methods: {
+    handleShow(data){
+      data._id = data._id.$oid
+      this.$http
+      .post('/api/user/handleShow', 
+        {
+          data: data,
+          name: this.$store.state.user.user
+        }
+      )
+      .then(res => {
+      })
+      .catch(err => {
+      })
     }
   }
 }

@@ -1,8 +1,8 @@
+from re import search
 from flask import Flask,request, Response
 from flask_restful import Resource
 import json
 import pymongo
-from bson.objectid import ObjectId
 
 client = pymongo.MongoClient(host='127.0.0.1', port=27017)
 db_list = client.list_database_names()
@@ -25,7 +25,9 @@ class register(Resource):
           'name': name,
           'password': password,
           'habit': habit,
-          'interesting': interesting
+          'interesting': interesting,
+          'history': [],
+          'search': []
         })
         return
 
@@ -43,3 +45,26 @@ class login(Resource):
               'admin': user['admin']
             }
         return {'msg': '用户名或密码错误'}, 401
+
+# 浏览记录
+class handleShow(Resource):
+    def post(self):
+        data = json.loads(request.get_data().decode('utf-8'))
+        name = data.get('name')
+        data = data.get('data')
+        
+        print(name, data)
+        condition = {'name':name}
+        now_user = collections.find_one(condition)
+        key = now_user['history']
+
+        if len(key) >= 100:
+          key.pop(0)
+
+        key.append(data)
+        now_user['history'] = key
+        collections.update_one({'name':name},{"$set":{"history": key}})
+
+        return {
+          'msg': 'success'
+        }

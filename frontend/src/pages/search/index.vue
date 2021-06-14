@@ -7,44 +7,32 @@
         :loading="loading"
         search
       ></Selection>
-      <main>
-        <div class="search-paper">
-          <Card
-            :data="data"
-            v-for="(data,key) in cardData.data"
-            :key="key"
-          >
-          </Card>
-          <el-pagination
-            v-if="cardData.total>10"
-            background
-            layout="prev, pager, next"
-            @current-change="handleSizeChange"
-            :current-page="cardDataPage"
-            :total="cardData.total"
-          >
-          </el-pagination>
-        </div>
-        <aside class="search-image">
-          <div
-            class="content"
-            v-if="showAside"
-          >
-            <div
-              v-for="(imgUrl, key) in imagesData"
-              :key="key"
-            >
-              <el-image
-                class="image-item"
-                :src="imgUrl.url"
-                fit="cover"
-                :preview-src-list="new Array(imgUrl.url)"
-              ></el-image>
-              <span class="demonstration">{{imgUrl.title}}</span>
-            </div>
-          </div>
-        </aside>
-      </main>
+      <div
+        v-for="(data,key) in cardData.data"
+        :key="key"
+        style="display: flex"
+      >
+        <el-checkbox
+          :value="checkList.indexOf(data.content) !== -1"
+          @change	="handleChenck(data.content)"
+          style="float:left; margin-right: 10px"
+        >
+        </el-checkbox>
+        <Card
+          :data="data"
+        >
+        </Card>
+      </div>
+
+      <el-pagination
+        v-if="cardData.total>10"
+        background
+        layout="prev, pager, next"
+        @current-change="handleSizeChange"
+        :current-page="cardDataPage"
+        :total="cardData.total"
+      >
+      </el-pagination>
     </div>
   </div>
 </template>
@@ -64,25 +52,17 @@ export default {
     return {
       loading: false, // 加载按钮
 
-      checkList: ['paper', 'webs', 'report', 'english', 'patent', 'meeting'],
+      checkList: ['paper', 'patent', 'webpage'],
       checkListOption: [
-        { value: 'paper', label: '中文文献' },
-        { value: 'webs', label: '网页' },
-        { value: 'report', label: '科技报告' },
-        { value: 'english', label: '英文文献' },
+        { value: 'paper', label: '文献' },
         { value: 'patent', label: '专利' },
-        { value: 'meeting', label: '会议' }
+        { value: 'webpage', label: '网页' }
       ],
       keyword: '',
 
-      showAside: false, // 是否显示侧边栏
-      imagesData: [{ title: '暂无数据', url: 'null' }],
-
       cardData: {
-        'total': 2,
+        'total': 0,
         'data': [
-          {'title': '视距内空战训练的新手段：美使用增强现实技术生成歼20战斗机', 'author': '何晓骁', 'abstract': '11月16日，美国《驱动》网站发文披露，两家美国公司在此前完成了一次具有相当创新性的空战模拟测试，首次让飞行员驾驶实装和虚拟的人工智能（AI）目标进行了“狗斗”。测试在驾驶舱中引入增强现实（AR）技术，将虚拟目标显示在飞行员眼前，而这次的虚拟目标是以歼20战斗机为?', 'source': '来源', 'url': '/api/files/test.pdf', 'type':'文献'},
-          {'title': '视距内空战训练的新手段：美使用增强现实技术生成歼20战斗机', 'author': '何晓骁', 'abstract': '11月16日，美国《驱动》网站发文披露，两家美国公司在此前完成了一次具有相当创新性的空战模拟测试，首次让飞行员驾驶实装和虚拟的人工智能（AI）目标进行了“狗斗”。测试在驾驶舱中引入增强现实（AR）技术，将虚拟目标显示在飞行员眼前，而这次的虚拟目标是以歼20战斗机为?', 'source': '来源', 'url': 'https://www.baidu.com', 'type':'网页'}
         ]
       },
 
@@ -96,18 +76,16 @@ export default {
           params: {
             key: this.keyword,
             page: this.cardDataPage,
-            type: this.checkList
+            type: this.checkList,
+            name: this.$store.state.user.user
           }
         })
         .then(res => {
-          this.imagesData = res.images
-          this.cardData = res.cardData
-          this.showAside = true
+          this.cardData = res
           this.loading = false
         })
         .catch(err => {
           this.loading = false
-          this.showAside = true
           // some code
         })
     },
