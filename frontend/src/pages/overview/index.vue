@@ -73,7 +73,9 @@ export default {
       loading: false,
       selected: '',
       checkList: [],
-      tags: [{id: 'paper', name: '文献'}, {id: 'patent',name: '专利'}, {id: 'webpage', name: '网页'}],
+      tags: [{id: 'paper', name: '文献'}, {id: 'patent',name: '专利'}, {id: 'webpage', name: '网页'}
+      // , {id: 'standard', name: '标准'}
+      ],
       abstract: '',
       cardDataPage: 1,
       cardData: {

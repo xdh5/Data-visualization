@@ -52,11 +52,12 @@ export default {
     return {
       loading: false, // 加载按钮
 
-      checkList: ['paper', 'patent', 'webpage'],
+      checkList: ['paper', 'patent', 'webpage', 'standard'],
       checkListOption: [
         { value: 'paper', label: '文献' },
         { value: 'patent', label: '专利' },
-        { value: 'webpage', label: '网页' }
+        { value: 'webpage', label: '网页' },
+        { value: 'standard', label: '标准' }
       ],
       keyword: '',
 
@@ -98,6 +99,15 @@ export default {
     },
     handleSizeChange(val) {
       this.cardDataPage = val
+      this.getData()
+    },
+  },
+  mounted(){
+    if(this.$route.params.title){
+      this.keyword = this.$route.params.title
+      this.getData()
+    }else if(this.$route.params.type){
+      this.checkList = [this.$route.params.type]
       this.getData()
     }
   }

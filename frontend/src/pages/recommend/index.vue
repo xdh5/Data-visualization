@@ -1,9 +1,8 @@
 <template>
-  <div class="recommend">
+  <div class="recommend" v-loading="loading">
     <div
       v-for="(data,key) in cardData.data"
       :key="key"
-      v-loading = "loading"
     >
       <Card
         :data="data"
@@ -41,12 +40,14 @@ export default {
   },
   methods: {
     getData() {
+      this.loading = true
       this.$http
         .get('/api/recommend/getRecommend', {
           params: {
             page: this.cardDataPage,
             name: this.$store.state.user.user
-          }
+          },
+          timeout: 0
         })
         .then(res => {
           this.cardData = res
@@ -70,6 +71,7 @@ export default {
 <style lang="less" scoped>
 .recommend {
   margin: 0 10%;
+  min-height: 200px;
 }
 .el-pagination {
   margin-top: 10px;

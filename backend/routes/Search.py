@@ -18,14 +18,10 @@ class get_data(Resource):
         page = request.args.get('page')
         tap = request.args.get('key')
         name = request.args.get('name')
-
-        condition = {'name':name}
-        
+        now_user = user.find_one({'name': name})
         key = now_user['search']
-
         if len(key) >= 100:
           key.pop(0)
-
         key.append(tap)
         now_user['search'] = key
         user.update_one({'name':name},{"$set":{"search": key}})

@@ -45,6 +45,21 @@
     <div slot="tip" class="el-upload__tip">只能上传csv文件</div>
   </el-upload>
   </div>
+  <div class="item">
+  <h2 class="title">上传标准数据</h2>
+  <el-upload
+    ref="standard"
+    action="/api/upload/standard"
+    :limit="1"
+    :file-list="standardList"
+    :auto-upload="false"
+    :on-success="success">
+    <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
+    <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload('standard')">上传到服务器</el-button>
+    <el-button size="small"><a href="/api/upload/download?type=standard">下载模板</a></el-button>
+    <div slot="tip" class="el-upload__tip">只能上传csv文件</div>
+  </el-upload>
+  </div>
 </div>
 </template>
 <script>
@@ -55,6 +70,7 @@ export default {
       paperList: [],
       patentList: [],
       webpageList: [],
+      standardList: [],
     };
   },
   methods: {

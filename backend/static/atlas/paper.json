@@ -1,0 +1,163 @@
+{
+  "name": "aircraft",
+  "children": [
+    {
+      "name": "Unmanned Aerial Vehicles",
+      "children": [
+        {
+          "name": "military exercise",
+		  "value":6
+        },
+        {
+          "name": "aerial photo reconnaissance"
+        },
+        {
+          "name": "information communication"
+        },
+        {
+          "name": "target tracking"
+        },
+        {
+          "name": "engine control system"
+        }       
+      ]
+    },
+    {
+      "name": "lidar",
+      "children": [
+        {
+          "name": "target detection"
+        },
+        {
+          "name": "jet aircraft"
+        },
+        {
+          "name": "deployment system"
+        },
+        {
+          "name": "distance detection"
+        },
+        {
+          "name": "tracking maneuver"
+        }
+      ]
+    },
+    {
+      "name": "radar",
+      "children": [
+        {
+          "name": "communication simulation"
+        },
+        {
+          "name": "airborne radar radar"
+        },
+        {
+          "name": "tracking alert radar"
+        },
+        {
+          "name": "battlefield surveillance radar"
+        }
+      ]
+    },
+    {
+      "name": "Surveillance aircraft",
+      "children": [
+        {
+          "name": "meteorological reconnaissance"
+        },
+        {
+          "name": "trajectory simulation"
+        },
+        {
+          "name": "imaging reconnaissance"
+        },
+        {
+          "name": "Wireless transmission"
+        },
+        {
+          "name": "tactical reconnaissance aircraft"
+        },
+        {
+          "name": "Path Planning"
+        }
+      ]
+    },
+    {
+      "name": "fighter aircraft",
+      "children": [
+        {
+          "name": "Autonomous Attack"
+        },
+        {
+          "name": "fighter aircraft flight simulation"
+        },
+        {
+          "name": "bomber"
+        }
+      ]
+    },
+    {
+      "name": "transport aircraft",
+      "children": [
+        {
+          "name": "load and landing"
+        },
+        {
+          "name": "satellite positioning"
+        },
+        {
+          "name": "tactical transport aircraft"
+        },
+        {
+          "name": "communication device"
+        },
+        {
+          "name": "flight power system"
+        }
+      ]
+    },
+    {
+      "name": "wireless communication",
+      "children": [
+        {
+          "name": "signal simulation"
+        },
+        {
+          "name": "UAV communication"
+        },
+        {
+          "name": "military automation"
+        },
+        {
+          "name": "real-time tracking"
+        },
+        {
+          "name": "search radar"
+        },
+        {
+          "name": "robustness test"
+        }
+      ]
+    },
+    {
+      "name": "carrier-based aircraft",
+      "children": [
+        {
+          "name": "carrier-aircraft"
+        },
+        {
+          "name": "satellite navigation"
+        },
+        {
+          "name": "flight scheduling"
+        },
+        {
+          "name": "carrier-based pilot"
+        },
+        {
+          "name": "launch and recovery control"
+        }
+      ]
+    }
+  ]
+}

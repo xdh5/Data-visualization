@@ -62,6 +62,7 @@ router.beforeEach((to, from, next) => {
     router.push({ name: 'login' })
     return
   }
+  store.commit('SET_INDEX', to.name)
   next()
 });
 

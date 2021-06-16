@@ -49,6 +49,7 @@ export default {
         {lable: '文献', value: 'paper'},
         {lable: '专利', value: 'patent'},
         {lable: '网页', value: 'webpage'},
+        { value: 'standard', label: '标准' }
       ],
       spiderList: [],
       spiderRun: [

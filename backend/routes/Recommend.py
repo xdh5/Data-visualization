@@ -1,3 +1,4 @@
+import re
 import sys 
 sys.path.append(r"C:/Users/zzy/Desktop/d/backend/model/recommend")
 from itemCF import ItemCFRec
@@ -18,12 +19,10 @@ class show_recommend(Resource):
         page = request.args.get('page')
         name = request.args.get('name')
         now_user = user.find_one({'name': name})
-
-        itemcf = ItemCFRec(now_user['_id'], now_user['history'])
-        result = itemcf.resul
-        # result = collections.find({},{'_id':1, 'title': 1, 'content':1, 'type': 1}).skip(10*(int(page)-1)).limit(10)
+        itemcf = ItemCFRec(now_user['_id'], now_user['history'], update=False)
+        result = itemcf.result
         response = {
-          'data': list(json.loads(json_util.dumps(result))),
-          'total': result.count()
+          'data': result,
+          'total': len(result)
         }
         return response

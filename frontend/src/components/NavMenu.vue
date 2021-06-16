@@ -4,7 +4,7 @@
     <div class="logo">
       <img src="~@/assets/logo.png" alt=""> 
     </div>
-    <el-tabs v-model="navIndex" @tab-click="handleClick">
+    <el-tabs :value="$store.state.navIndex" @tab-click="handleClick">
       <el-tab-pane label="首页" name="home"></el-tab-pane>
       <el-tab-pane label="知识图谱" name="atlas"></el-tab-pane>
       <el-tab-pane label="检索" name="search"></el-tab-pane>
@@ -52,12 +52,13 @@ export default {
   name: 'navMenu',
   data () {
     return {
-      navIndex: 'home'
+
     }
   },
   methods: {
     handleClick(tab, event) {
-      this.$router.push({name: this.navIndex})
+      this.$store.commit('SET_INDEX', tab.name)
+      this.$router.push({name: tab.name})
     },
     register(){
       if(!this.$store.state.user){

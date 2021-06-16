@@ -1,0 +1,997 @@
+{
+    "name": "aircraft",
+    "children": [
+        {
+            "name": "WEAPONS(F41)",
+            "children": [
+                {
+                    "name": "F41A",
+                    "children": [
+                        {
+                            "name": "F41A23",
+                            "children": [
+                                {
+                                    "name": "F41A23/00",
+                                    "value": 4,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Gun mountings, e.g. on vehicles; Disposition of guns on vehicles (F41A0025000000, F41A0027000000 take precedence)"
+                                },
+                                {
+                                    "name": "F41A23/24",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Turret gun mountings (feeding, loading or guiding ammunition F41A0009000000;mechanical elevating or traversing systems for turret guns F41A0027180000)"
+                                },
+                                {
+                                    "name": "F41A23/26",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Mountings for transport only; Loading or unloading arrangements for guns for use with carrier vehicles (F41A0023500000 takes precedence)"
+                                },
+                                {
+                                    "name": "F41A23/34",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "on wheeled or endless-track vehicles"
+                                }
+                            ],
+                            "value": 9,
+                            "itemStyle": {
+                                "color": "red",
+                                "borderColor": "red"
+                            },
+                            "text": "Gun mountings, e.g. on vehicles; Disposition of guns on vehicles (F41A0025000000, F41A0027000000 take precedence)"
+                        },
+                        {
+                            "name": "F41A9",
+                            "children": [
+                                {
+                                    "name": "F41A9/04",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "using endless-chain belts carrying a plurality of ammunition"
+                                },
+                                {
+                                    "name": "F41A9/29",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Feeding of belted ammunition"
+                                },
+                                {
+                                    "name": "F41A9/87",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Ammunition handling dollies or transfer carts (F41A0009860000 takes precedence)"
+                                }
+                            ],
+                            "value": 4,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Feeding or loading of ammunition (adaptations for feeding or loading missiles from magazines in air guns F41B0011500000); Magazines; Guiding means for the extracting of cartridges (cartridge extractors or ejectors F41A0015000000)"
+                        }
+                    ],
+                    "value": 13,
+                    "itemStyle": {
+                        "color": "blue",
+                        "borderColor": "blue"
+                    },
+                    "text": "FUNCTIONAL FEATURES OR DETAILS COMMON TO BOTH SMALLARMS AND ORDNANCE, e.g. CANNONS; MOUNTINGS FOR SMALLARMS OR ORDNANCE"
+                },
+                {
+                    "name": "F41F",
+                    "children": [
+                        {
+                            "name": "F41F3",
+                            "children": [
+                                {
+                                    "name": "F41F3/06",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "from aircraft"
+                                },
+                                {
+                                    "name": "F41F3/065",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Rocket pods, i.e. detachable containers for launching a plurality of rockets"
+                                }
+                            ],
+                            "value": 3,
+                            "itemStyle": {
+                                "color": "red",
+                                "borderColor": "red"
+                            },
+                            "text": "Rocket or torpedo launchers"
+                        }
+                    ],
+                    "value": 4,
+                    "itemStyle": {
+                        "color": "blue",
+                        "borderColor": "blue"
+                    },
+                    "text": "APPARATUS FOR LAUNCHING PROJECTILES OR MISSILES FROM BARRELS, e.g. CANNONS (smallarms F41C); LAUNCHERS FOR ROCKETS OR TORPEDOES; HARPOON GUNS (functional features or details common to both smallarms and ordnance, mountings therefor F41A;projecting missiles without use of explosive or combustible propellant charge F41B)"
+                },
+                {
+                    "name": "F41G",
+                    "children": [
+                        {
+                            "name": "F41G1",
+                            "children": [
+                                {
+                                    "name": "F41G1/46",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "for particular applications"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Sighting devices (for indirect laying of fire F41G0003160000;bombsights F41G0003240000)"
+                        },
+                        {
+                            "name": "F41G3",
+                            "children": [
+                                {
+                                    "name": "F41G3/00",
+                                    "value": 12,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Aiming or laying means (sighting devices F41G0001000000;determining direction, distance or velocity by use of radio or other waves G01S;computers G06;antennas H01Q)"
+                                },
+                                {
+                                    "name": "F41G3/04",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "for dispersing fire from a battery"
+                                },
+                                {
+                                    "name": "F41G3/22",
+                                    "value": 4,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "for vehicle-borne armament, e.g. on aircraft"
+                                },
+                                {
+                                    "name": "F41G3/26",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Teaching or practice apparatus for gun-aiming or gun-laying"
+                                }
+                            ],
+                            "value": 19,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Aiming or laying means (sighting devices F41G0001000000;determining direction, distance or velocity by use of radio or other waves G01S;computers G06;antennas H01Q)"
+                        },
+                        {
+                            "name": "F41G5",
+                            "children": [
+                                {
+                                    "name": "F41G5/06",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "using electric means for remote control"
+                                },
+                                {
+                                    "name": "F41G5/18",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Tracking systems for guns on aircraft"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Elevating or traversing control systems for guns (gun mountings permitting traversing or elevating movement, e.g. gun carriages, F41A0027000000;computers G06)"
+                        },
+                        {
+                            "name": "F41G7",
+                            "children": [
+                                {
+                                    "name": "F41G7/00",
+                                    "value": 8,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Direction control systems for self-propelled missiles (flight control B64C, G05D0001000000;self-propelled or guided missiles having direction control systems only installed aboard F42B0015010000;rocket torpedoes F42B0017000000;marine torpedoes or sea-mines having self-propulsion means F42B0019000000;locating by use of radio or other waves G01S;computing aspects G06)"
+                                },
+                                {
+                                    "name": "F41G7/22",
+                                    "value": 8,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Homing guidance systems"
+                                },
+                                {
+                                    "name": "F41G7/28",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "Radio guidance systems"
+                                },
+                                {
+                                    "name": "F41G7/34",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "based on predetermined target position data"
+                                }
+                            ],
+                            "value": 18,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Direction control systems for self-propelled missiles (flight control B64C, G05D0001000000;self-propelled or guided missiles having direction control systems only installed aboard F42B0015010000;rocket torpedoes F42B0017000000;marine torpedoes or sea-mines having self-propulsion means F42B0019000000;locating by use of radio or other waves G01S;computing aspects G06)"
+                        }
+                    ],
+                    "value": 43,
+                    "itemStyle": {
+                        "color": "green",
+                        "borderColor": "green"
+                    },
+                    "text": "WEAPON SIGHTS; AIMING (optical aspects thereof G02B)"
+                },
+                {
+                    "name": "F41H",
+                    "children": [
+                        {
+                            "name": "F41H1",
+                            "children": [
+                                {
+                                    "name": "F41H1/00",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Personal protection-gear (shields for personal use F41H0005080000;for protection against chemical warfare A62B)"
+                                },
+                                {
+                                    "name": "F41H1/02",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Armoured or projectile- or missile-resistant garments; Composite protection fabrics"
+                                }
+                            ],
+                            "value": 3,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Personal protection-gear (shields for personal use F41H0005080000;for protection against chemical warfare A62B)"
+                        },
+                        {
+                            "name": "F41H11",
+                            "children": [
+                                {
+                                    "name": "F41H11/00",
+                                    "value": 9,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Defence installations; Defence devices (constructional aspects, see section E, e.g. E04H0009040000); Means for clearing or detecting landmines"
+                                },
+                                {
+                                    "name": "F41H11/02",
+                                    "value": 33,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Anti-aircraft or anti-guided missile defence installations or systems (cartridges or missiles for producing smoke or for dispensing radar chaff or infra-red material F42B0005150000, F42B0012480000, F42B0012700000)"
+                                },
+                                {
+                                    "name": "F41H11/04",
+                                    "value": 5,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Aerial barrages"
+                                },
+                                {
+                                    "name": "F41H11/06",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "Gun-traps"
+                                },
+                                {
+                                    "name": "F41H11/136",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "Magnetic, electromagnetic, acoustic or radiation systems, e.g. ground penetrating radars or metal-detectors"
+                                }
+                            ],
+                            "value": 49,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Defence installations; Defence devices (constructional aspects, see section E, e.g. E04H0009040000); Means for clearing or detecting landmines"
+                        },
+                        {
+                            "name": "F41H13",
+                            "children": [
+                                {
+                                    "name": "F41H13/00",
+                                    "value": 25,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Means of attack or defence not otherwise provided for"
+                                }
+                            ],
+                            "value": 25,
+                            "itemStyle": {
+                                "color": "green",
+                                "borderColor": "green"
+                            },
+                            "text": "Means of attack or defence not otherwise provided for"
+                        },
+                        {
+                            "name": "F41H3",
+                            "children": [
+                                {
+                                    "name": "F41H3/00",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Camouflage, i.e. means or methods for concealment or disguise (for vessels B63G0008340000, B63G0013020000)"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Camouflage, i.e. means or methods for concealment or disguise (for vessels B63G0008340000, B63G0013020000)"
+                        },
+                        {
+                            "name": "F41H5",
+                            "children": [
+                                {
+                                    "name": "F41H5/02",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Plate construction"
+                                },
+                                {
+                                    "name": "F41H5/04",
+                                    "value": 6,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "composed of more than one layer"
+                                },
+                                {
+                                    "name": "F41H5/08",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "for personal use"
+                                }
+                            ],
+                            "value": 9,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Armour; Armour plates; Shields (processes for manufacturing or treating B21, C21)"
+                        },
+                        {
+                            "name": "F41H7",
+                            "children": [
+                                {
+                                    "name": "F41H7/00",
+                                    "value": 8,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Armoured or armed vehicles (general vehicle aspects B60;armoured or armed ships B63G;armoured or armed aircraft B64D;mounting guns, e.g. machine-guns, on vehicles F41A0023000000)"
+                                },
+                                {
+                                    "name": "F41H7/02",
+                                    "value": 7,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Land vehicles with enclosing armour, e.g. tanks (endless-track vehicles, steering thereof B62D)"
+                                },
+                                {
+                                    "name": "F41H7/10",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "Mine-laying land vehicles"
+                                }
+                            ],
+                            "value": 16,
+                            "itemStyle": {
+                                "color": "green",
+                                "borderColor": "green"
+                            },
+                            "text": "Armoured or armed vehicles (general vehicle aspects B60;armoured or armed ships B63G;armoured or armed aircraft B64D;mounting guns, e.g. machine-guns, on vehicles F41A0023000000)"
+                        }
+                    ],
+                    "value": 105,
+                    "itemStyle": {
+                        "color": "red",
+                        "borderColor": "red"
+                    },
+                    "text": "ARMOUR; ARMOURED TURRETS; ARMOURED OR ARMED VEHICLES; MEANS OF ATTACK OR DEFENCE, e.g. CAMOUFLAGE, IN GENERAL"
+                },
+                {
+                    "name": "F41J",
+                    "children": [
+                        {
+                            "name": "F41J9",
+                            "children": [
+                                {
+                                    "name": "F41J9/08",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Airborne targets, e.g. drones, kites, balloons"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Moving targets, i.e. moving when fired at (F41J0002000000 takes precedence)"
+                        }
+                    ],
+                    "value": 5,
+                    "itemStyle": {
+                        "color": "blue",
+                        "borderColor": "blue"
+                    },
+                    "text": "TARGETS; TARGET RANGES; BULLET CATCHERS"
+                }
+            ],
+            "value": 171,
+            "itemStyle": {
+                "color": "red",
+                "borderColor": "red"
+            },
+            "text": "WEAPONS"
+        },
+        {
+            "name": "AMMUNITION; BLASTING(F42)",
+            "children": [
+                {
+                    "name": "F42B",
+                    "children": [
+                        {
+                            "name": "F42B10",
+                            "children": [
+                                {
+                                    "name": "F42B10/14",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "using fins spread or deployed after launch, e.g. after leaving the barrel"
+                                },
+                                {
+                                    "name": "F42B10/16",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Wrap-around fins"
+                                },
+                                {
+                                    "name": "F42B10/60",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Steering arrangements (F42B0019010000 takes precedence)"
+                                },
+                                {
+                                    "name": "F42B10/64",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "of fins"
+                                }
+                            ],
+                            "value": 5,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Means for influencing, e.g. improving, the aerodynamic properties of projectiles or missiles; Arrangements on projectiles or missiles for stabilising, steering, range-reducing, range-increasing or fall-retarding (F42B0006000000 takes precedence;sub-calibre projectiles having sabots F42B0014000000)"
+                        },
+                        {
+                            "name": "F42B12",
+                            "children": [
+                                {
+                                    "name": "F42B12/00",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Projectiles, missiles or mines characterised by the warhead, the intended effect, or the material (F42B0006000000, F42B0010000000, F42B0014000000 take precedence;for practice or training F42B0008120000, F42B0008280000;self-propulsion or guidance aspects F42B0015000000)"
+                                },
+                                {
+                                    "name": "F42B12/20",
+                                    "value": 4,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "of high-explosive type (F42B0012440000 takes precedence)"
+                                },
+                                {
+                                    "name": "F42B12/32",
+                                    "value": 5,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "the hull or case comprising a plurality of discrete bodies, e.g. steel balls, embedded therein"
+                                },
+                                {
+                                    "name": "F42B12/36",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "for dispensing materials; for producing chemical or physical reaction; for signalling"
+                                },
+                                {
+                                    "name": "F42B12/46",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "for dispensing gases, vapours, powders or chemically-reactive substances (F42B0012700000 takes precedence)"
+                                },
+                                {
+                                    "name": "F42B12/48",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "smoke-producing"
+                                },
+                                {
+                                    "name": "F42B12/62",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "the submissiles being ejected parallel to the longitudinal axis of the projectile"
+                                },
+                                {
+                                    "name": "F42B12/66",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "Chain-shot, i.e. the submissiles being interconnected by chains or the like"
+                                },
+                                {
+                                    "name": "F42B12/72",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "characterised by the material (heat treatment for explosive shells C21D0009160000)"
+                                },
+                                {
+                                    "name": "F42B12/80",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Coatings"
+                                }
+                            ],
+                            "value": 19,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Projectiles, missiles or mines characterised by the warhead, the intended effect, or the material (F42B0006000000, F42B0010000000, F42B0014000000 take precedence;for practice or training F42B0008120000, F42B0008280000;self-propulsion or guidance aspects F42B0015000000)"
+                        },
+                        {
+                            "name": "F42B14",
+                            "children": [
+                                {
+                                    "name": "F42B14/06",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Sub-calibre projectiles having sabots; Sabots therefor"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Projectiles or missiles characterised by arrangements for guiding or sealing them inside barrels, or for lubricating or cleaning barrels"
+                        },
+                        {
+                            "name": "F42B15",
+                            "children": [
+                                {
+                                    "name": "F42B15/00",
+                                    "value": 3,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Self-propelled projectiles or missiles, e.g. rockets; Guided missiles (F42B0010000000, F42B0012000000, F42B0014000000 take precedence;for practice or training F42B0008120000;rocket torpedoes F42B0017000000;marine torpedoes F42B0019000000;cosmonautic vehicles B64G;jet-propulsion plants F02K)"
+                                },
+                                {
+                                    "name": "F42B15/01",
+                                    "value": 5,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Arrangements thereon for guidance or control (aircraft flight control B64C;guidance systems other than those only installed aboard F41G0007000000, F41G0009000000;locating by use of radio or other waves G01S;flight control in general G05D0001000000;computing aspects G06)"
+                                },
+                                {
+                                    "name": "F42B15/08",
+                                    "value": 7,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "for carrying measuring instruments (adaptations for meteorology G01W0001080000)"
+                                },
+                                {
+                                    "name": "F42B15/10",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "blue",
+                                        "borderColor": "blue"
+                                    },
+                                    "text": "Missiles having a trajectory only in the air"
+                                },
+                                {
+                                    "name": "F42B15/36",
+                                    "value": 3,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Means for interconnecting rocket-motor and body section; Multi-stage connectors; Disconnecting means"
+                                }
+                            ],
+                            "value": 19,
+                            "itemStyle": {
+                                "color": "yellow",
+                                "borderColor": "yellow"
+                            },
+                            "text": "Self-propelled projectiles or missiles, e.g. rockets; Guided missiles (F42B0010000000, F42B0012000000, F42B0014000000 take precedence;for practice or training F42B0008120000;rocket torpedoes F42B0017000000;marine torpedoes F42B0019000000;cosmonautic vehicles B64G;jet-propulsion plants F02K)"
+                        },
+                        {
+                            "name": "F42B30",
+                            "children": [
+                                {
+                                    "name": "F42B30/00",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Projectiles or missiles, not otherwise provided for, characterised by the ammunition class or type, e.g. by the launching apparatus or weapon used (F42B0010000000, F42B0012000000, F42B0014000000 take precedence)"
+                                },
+                                {
+                                    "name": "F42B30/08",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Ordnance projectiles or missiles, e.g. shells"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Projectiles or missiles, not otherwise provided for, characterised by the ammunition class or type, e.g. by the launching apparatus or weapon used (F42B0010000000, F42B0012000000, F42B0014000000 take precedence)"
+                        },
+                        {
+                            "name": "F42B35",
+                            "children": [
+                                {
+                                    "name": "F42B35/00",
+                                    "value": 9,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Testing or checking of ammunition"
+                                }
+                            ],
+                            "value": 9,
+                            "itemStyle": {
+                                "color": "green",
+                                "borderColor": "green"
+                            },
+                            "text": "Testing or checking of ammunition"
+                        },
+                        {
+                            "name": "F42B39",
+                            "children": [
+                                {
+                                    "name": "F42B39/00",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Packaging or storage of ammunition or explosive charges; Safety features thereof; Cartridge belts; Cartridge bags"
+                                },
+                                {
+                                    "name": "F42B39/14",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Explosion or fire protection arrangements on packages or ammunition (F42B0039200000 takes precedence)"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Packaging or storage of ammunition or explosive charges; Safety features thereof; Cartridge belts; Cartridge bags"
+                        },
+                        {
+                            "name": "F42B5",
+                            "children": [
+                                {
+                                    "name": "F42B5/02",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Cartridges, i.e. cases with propellant charge and missile"
+                                },
+                                {
+                                    "name": "F42B5/145",
+                                    "value": 2,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "for dispensing gases, vapours, powders, particles or chemically-reactive substances (from projectiles F42B0012460000, F42B0012700000)"
+                                }
+                            ],
+                            "value": 3,
+                            "itemStyle": {
+                                "color": "blue",
+                                "borderColor": "blue"
+                            },
+                            "text": "Cartridge ammunition, e.g. separately-loaded propellant charges (shotgun ammunition F42B0007000000;practice or training ammunition F42B0008000000;missiles therefor F42B0012000000, F42B0014000000, F42B0015000000)"
+                        }
+                    ],
+                    "value": 63,
+                    "itemStyle": {
+                        "color": "red",
+                        "borderColor": "red"
+                    },
+                    "text": "EXPLOSIVE CHARGES, e.g. FOR BLASTING; FIREWORKS; AMMUNITION (explosive compositions C06B;fuzes F42C;blasting F42D)"
+                },
+                {
+                    "name": "F42C",
+                    "children": [
+                        {
+                            "name": "F42C15",
+                            "children": [
+                                {
+                                    "name": "F42C15/00",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Arming-means in fuzes; Safety means for preventing premature detonation of fuzes or charges"
+                                },
+                                {
+                                    "name": "F42C15/40",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "wherein the safety or arming action is effected electrically"
+                                }
+                            ],
+                            "value": 2,
+                            "itemStyle": {
+                                "color": "green",
+                                "borderColor": "green"
+                            },
+                            "text": "Arming-means in fuzes; Safety means for preventing premature detonation of fuzes or charges"
+                        }
+                    ],
+                    "value": 7,
+                    "itemStyle": {
+                        "color": "blue",
+                        "borderColor": "blue"
+                    },
+                    "text": "AMMUNITION FUZES (blasting cartridge initiators F42B0003100000;chemical aspects C06C); ARMING OR SAFETY MEANS THEREFOR (filling fuzes F42B0033020000;fitting or extracting primers in or from fuzes F42B0033040000;containers for fuzes F42B0039300000)"
+                },
+                {
+                    "name": "F42D",
+                    "children": [
+                        {
+                            "name": "F42D1",
+                            "children": [
+                                {
+                                    "name": "F42D1/00",
+                                    "value": 4,
+                                    "itemStyle": {
+                                        "color": "red",
+                                        "borderColor": "red"
+                                    },
+                                    "text": "Blasting methods or apparatus, e.g. for loading or tamping"
+                                },
+                                {
+                                    "name": "F42D1/02",
+                                    "value": 1,
+                                    "itemStyle": {
+                                        "color": "green",
+                                        "borderColor": "green"
+                                    },
+                                    "text": "Arranging blasting cartridges to form an assembly (adaptation of blasting cartridges therefor F42B0003020000)"
+                                },
+                                {
+                                    "name": "F42D1/08",
+                                    "value": 3,
+                                    "itemStyle": {
+                                        "color": "yellow",
+                                        "borderColor": "yellow"
+                                    },
+                                    "text": "Tamping methods; Methods for loading boreholes with explosives; Apparatus therefor"
+                                }
+                            ],
+                            "value": 8,
+                            "itemStyle": {
+                                "color": "red",
+                                "borderColor": "red"
+                            },
+                            "text": "Blasting methods or apparatus, e.g. for loading or tamping"
+                        }
+                    ],
+                    "value": 9,
+                    "itemStyle": {
+                        "color": "green",
+                        "borderColor": "green"
+                    },
+                    "text": "BLASTING (fuses, e.g. fuse cords, C06C0005000000;blasting cartridges F42B0003000000)"
+                }
+            ],
+            "value": 79,
+            "itemStyle": {
+                "color": "yellow",
+                "borderColor": "yellow"
+            },
+            "text": "AMMUNITION; BLASTING"
+        }
+    ],
+    "value": 250,
+    "text": "aircraft",
+    "itemStyle": {
+        "color": "red",
+        "borderColor": "red"
+    }
+}
